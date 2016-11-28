@@ -1,5 +1,6 @@
 image: node:6.9
 script:
   - npm install
-  - node server.js
+  - npm install pm2 -g
+  - pm2 start server.js
   - npm test
