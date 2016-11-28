@@ -59,7 +59,7 @@ describe("Sample unit testing for report collection", function() {
 
     it("should return array of object", function(done) {
         server
-            .get("/api/report/58394a4f2d2d8802086ee989")
+            .get("/api/report/58394a58d355d502137cbd9f")
             .set('Accept', 'application/json')
             .expect(200)
             .end(function(error, result) {
