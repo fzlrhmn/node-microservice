@@ -16,4 +16,4 @@ notify:
   slack:
     webhook_url: https://hooks.slack.com/services/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
     channel: drone-ci
-    username: drone-ci
+    username: drone
