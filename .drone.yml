@@ -4,6 +4,14 @@ script:
   - npm install pm2 -g
   - pm2 start server.js
   - npm test
+
+publish:
+  username: faisalrahman
+  password: musicman
+  email: faizal.btg@gmail.com
+  repo: faisalrahman/node-microservice
+  tag: latest
+
 notify:
   slack:
     webhook_url: https://hooks.slack.com/services/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
