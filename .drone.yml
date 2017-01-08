@@ -12,6 +12,7 @@ pipeline:
     email: faizal.btg@gmail.com
     repo: faisalrahman/node-microservice
     tag: latest
+    dockerfile: Dockerfile
 
 notify:
   slack:
