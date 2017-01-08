@@ -5,12 +5,13 @@ script:
   - pm2 start server.js
   - npm test
 
-publish:
-  username: faisalrahman
-  password: musicman
-  email: faizal.btg@gmail.com
-  repo: faisalrahman/node-microservice
-  tag: latest
+pipeline:
+  docker:
+    username: faisalrahman
+    password: musicman
+    email: faizal.btg@gmail.com
+    repo: faisalrahman/node-microservice
+    tag: latest
 
 notify:
   slack:
