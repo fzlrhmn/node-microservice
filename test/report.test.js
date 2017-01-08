@@ -44,8 +44,6 @@ describe("Sample unit testing for report collection", function() {
                 expect(response).to.have.property('data');
                 expect(response).to.have.property('count');
 
-                expect(response.data).to.have.length.of.at.least(5);
-
                 response.data.forEach(item => {
                     item.id.should.to.be.a('string');
                     assert.isNumber(item.latitude);
@@ -59,7 +57,7 @@ describe("Sample unit testing for report collection", function() {
 
     it("should return array of object", function(done) {
         server
-            .get("/api/report/58394a58d355d502137cbd9f")
+            .get("/api/report/58725af7927ec00058bb47d5")
             .set('Accept', 'application/json')
             .expect(200)
             .end(function(error, result) {
