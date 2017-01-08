@@ -1,13 +1,10 @@
 image: node:6.9
 
-before_script:
-  - npm install
-  - npm install pm2 -g
-  - pm2 start server.js --name node-microservice
-  - npm test
-
-after_script:
-  - pm2 stop node-microservice
-
-stages:
-  - build
+nodejs_run:
+  stage: test
+  script:
+    - npm install
+    - npm install pm2 -g
+    - pm2 start server.js --name node-microservice
+    - npm test
+    - pm2 stop node-microservice
