@@ -8,3 +8,4 @@ nodejs_run:
     - pm2 start server.js --name node-microservice
     - npm test
     - pm2 stop node-microservice
+  
