@@ -8,3 +8,8 @@ nodejs_run:
     - pm2 start server.js --name node-microservice
     - npm test
     - pm2 stop node-microservice
+
+build_image:
+  stage: development
+  script:
+    - docker build -t faisalrahman/nodemicroservice .
