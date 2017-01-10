@@ -10,6 +10,5 @@ nodejs_run:
     - pm2 stop node-microservice
 
 build_image:
-  stage: development
   script:
     - docker build -t faisalrahman/nodemicroservice .
