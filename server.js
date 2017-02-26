@@ -20,4 +20,5 @@ router.route('/report/:id')
 
 app.use('/api', router);
 app.listen(port);
+
 console.log("app started at port " + port);
