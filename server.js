@@ -4,7 +4,7 @@ let bodyParser  = require('body-parser');
 let mongoose    = require('mongoose');
 let router      = express.Router();
 let report      = require('./app/controllers/reportController');
-let port = process.env.PORT || 5000;
+let port 		= process.env.PORT || 5000;
 
 mongoose.connect('mongodb://192.168.3.102:27017/express-api-mongodb');
 app.use(bodyParser.urlencoded({ extended: true }));
